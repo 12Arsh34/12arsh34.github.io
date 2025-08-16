@@ -296,5 +296,32 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Default (desktop) */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px;
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* single column */
+  }
+}
+.skill-item {
+  padding: 15px;
+  font-size: 1rem;
+}
+
+
 
 
