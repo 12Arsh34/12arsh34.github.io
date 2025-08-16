@@ -4,7 +4,7 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = '<nav class="navbar">
   <div class="logo">MyPortfolio</div>
   <ul class="nav-links">
-    <li>><a href="index.html">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="skills.html">Skills</a></li>
     <li><a href="projects.html">Projects</a></li>
     <li><a href="contact.html">Contact</a></li>
@@ -114,6 +114,7 @@ if (form) {
     }
   });
 } 
+
 
 
 
