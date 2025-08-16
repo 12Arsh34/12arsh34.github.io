@@ -300,3 +300,50 @@ form button:hover {
   z-index: 100;
   transition: width 0.2s;
 }
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  margin: 20px 0;
+  padding: 20px;
+  background: #222831;
+  border-radius: 12px;
+}
+
+/* Skill Item */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: #393e46;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  height: 140px;          /* FIXED HEIGHT for uniform alignment */
+  transition: transform 0.2s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+}
+
+/* Icons and Images same size */
+.skill-item i,
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  font-size: 60px;        /* for Font Awesome */
+  object-fit: contain;    /* for images */
+  margin-bottom: 10px;
+}
+
+/* Labels */
+.skill-item span {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
