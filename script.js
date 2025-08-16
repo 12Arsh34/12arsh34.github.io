@@ -1,7 +1,7 @@
 
 
 const headerTemplate = document.createElement('template');
-headerTemplate.innerHTML = '<nav class="navbar">
+headerTemplate.innerHTML = '<nav class="nav-bar">
   <div class="logo">MyPortfolio</div>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
@@ -114,6 +114,7 @@ if (form) {
     }
   });
 } 
+
 
 
 
