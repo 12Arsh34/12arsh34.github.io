@@ -260,21 +260,41 @@ form button:hover {
   background: #007f88;
 }
 
-/* Scroll progress bar */
-#progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 5px;
-  width: 0;
-  background: #00adb5;   /* accent color */
-  z-index: 2000;         /* above navbar */
-  transition: width 0.25s ease-out;
+.container {
+  width: 90%;
+  max-width: 1200px; /* adapts to screen size */
+  margin: auto;
+}
+/* For tablets */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .project-card {
+    width: 100%;
+  }
 }
 
-#form-status {
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: opacity 0.3s ease;
+/* For mobile phones */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr; /* single column layout */
+  }
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
