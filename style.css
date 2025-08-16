@@ -22,8 +22,8 @@ h2 {
 /* --- Skills Section --- */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
   margin: 20px 0;
   padding: 20px;
   background: #222831;
@@ -36,10 +36,11 @@ h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   background: #393e46;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  height: 140px;          /* uniform height for alignment */
   transition: transform 0.2s ease;
 }
 
@@ -50,17 +51,17 @@ h2 {
 /* Uniform icons/images */
 .skill-item i,
 .skill-item img {
-  font-size: 50px;
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  margin-bottom: 8px;
+  width: 60px;
+  height: 60px;
+  font-size: 60px;        /* applies to font awesome icons */
+  object-fit: contain;    /* keeps logos/images proportional */
+  margin-bottom: 10px;
 }
 
 .skill-item span {
   color: white;
   font-weight: bold;
-  margin-top: 6px;
+  font-size: 14px;
 }
 
 /* --- Icon Colors --- */
@@ -300,50 +301,3 @@ form button:hover {
   z-index: 100;
   transition: width 0.2s;
 }
-/* Skills Grid */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 25px;
-  margin: 20px 0;
-  padding: 20px;
-  background: #222831;
-  border-radius: 12px;
-}
-
-/* Skill Item */
-.skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  background: #393e46;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  height: 140px;          /* FIXED HEIGHT for uniform alignment */
-  transition: transform 0.2s ease;
-}
-
-.skill-item:hover {
-  transform: scale(1.05);
-}
-
-/* Icons and Images same size */
-.skill-item i,
-.skill-item img {
-  width: 60px;
-  height: 60px;
-  font-size: 60px;        /* for Font Awesome */
-  object-fit: contain;    /* for images */
-  margin-bottom: 10px;
-}
-
-/* Labels */
-.skill-item span {
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-}
-
