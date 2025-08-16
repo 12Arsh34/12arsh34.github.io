@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  padding: 0 1rem;
+  padding: 0.1 rem;
   background: black
 }
 
@@ -118,6 +118,7 @@ h2 {
     margin: 3rem auto;
     padding: 2rem;
     background-color: #f8f9fa;
+    color: #00adb5;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease-in-out 0.2s;
