@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   padding: 0 1rem;
-  background: #f9f9f9;
+  background: black
 }
 
 h1 {
@@ -19,49 +19,22 @@ h2 {
   padding-bottom: 7px;
 }
 
-/* --- Skills Section --- */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 25px;
-  margin: 20px 0;
-  padding: 20px;
-  background: #222831;
-  border-radius: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
 }
 
 .skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  padding: 20px;
-  background: #393e46;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  height: 140px;          /* uniform height for alignment */
-  transition: transform 0.2s ease;
 }
 
-.skill-item:hover {
-  transform: scale(1.05);
-}
-
-/* Uniform icons/images */
-.skill-item i,
-.skill-item img {
-  width: 60px;
-  height: 60px;
-  font-size: 60px;        /* applies to font awesome icons */
-  object-fit: contain;    /* keeps logos/images proportional */
-  margin-bottom: 10px;
-}
-
-.skill-item span {
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
+.skill-item i {
+  font-size: 40px;
+  margin-bottom: 8px;
 }
 
 /* --- Icon Colors --- */
@@ -76,7 +49,6 @@ h2 {
 .fa-comments { color: #4caf50; }    /* Communication green */
 .fa-people-group { color: #2196f3; }/* Team blue */
 
-/* --- Navbar --- */
 .navbar {
   background-color: #333;
   display: flex;
@@ -85,6 +57,7 @@ h2 {
   padding: 12px 20px;
 }
 
+/* Logo text */
 .navbar .logo {
   color: white;
   font-size: 20px;
@@ -92,15 +65,18 @@ h2 {
   text-decoration: underline;
 }
 
+/* Nav links list */
 .navbar .nav-links {
   list-style: none;
   display: flex;
 }
 
+/* Each nav item */
 .navbar .nav-links li {
   margin-left: 20px;
 }
 
+/* Link styles */
 .navbar .nav-links a {
   color: white;
   text-decoration: none;
@@ -109,73 +85,67 @@ h2 {
   transition: background-color 0.3s;
 }
 
+/* Hover effect */
 .navbar .nav-links a:hover {
   background-color: #555;
   border-radius: 4px;
 }
 
-/* --- Hero Section --- */
 #hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin-left: 100px;
-  margin-right: 100px;
-  background: linear-gradient(to right, #00adb5, #393e46);
-  color: white;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin-left:100px;
+    margin-right:100px;
+    background: linear-gradient(to right, #00adb5, #393e46);
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
-
-#hero:hover {
-  transform: scale(1.05);
+#hero:hover{
+    transform: scale(1.05);
 }
-
 #hero h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
-
 #hero h3 {
-  font-style: italic;
-  margin-top: 1rem;
+    font-style: italic;
+    margin-top: 1rem;
 }
 
-/* --- About Section --- */
+/* About Section */
 #bio {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background-color: #f8f9fa;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease-in-out 0.2s;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out 0.2s;
 }
-
-#bio:hover {
-  transform: scale(1.05);
+#bio:hover{
+  transform:scale(1.05);  
 }
-
 #bio h3 {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
-
 #bio p {
-  line-height: 2;
+    line-height: 2;
 }
 
-/* --- Responsive --- */
+/* Responsive */
 @media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
 
-/* --- Projects Section --- */
+/* Projects Section */
 .projects-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  gap:50px;
   margin-top: 2rem;
 }
 
@@ -190,7 +160,7 @@ h2 {
 }
 
 .project-card:hover {
-  transform: translateY(8px);
+  transform: translateY( 8px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.6);
 }
 
@@ -222,7 +192,7 @@ h2 {
   background: #007f88;
 }
 
-/* --- Contact Section --- */
+/* Contact Section */
 #contact {
   margin: 3rem auto;
   padding: 2rem;
@@ -254,12 +224,13 @@ h2 {
   text-decoration: underline;
 }
 
+/* Contact Info Icons */
 .contact-info i {
   margin-right: 6px;
   color: #00adb5;
 }
 
-/* --- Form Styling --- */
+/* Form Styling */
 form {
   margin-top: 2rem;
   display: flex;
@@ -290,7 +261,7 @@ form button:hover {
   background: #007f88;
 }
 
-/* --- Scroll Progress Bar --- */
+/* Scroll progress bar */
 #progress-bar {
   position: fixed;
   top: 0;
@@ -300,4 +271,12 @@ form button:hover {
   width: 0;
   z-index: 100;
   transition: width 0.2s;
+}
+
+.skill-item span {
+  display: block;
+  margin-top: 8px;
+  color: #00adb5;   /* cyan blue text */
+  font-size: 1rem;
+  font-weight: bold;
 }
