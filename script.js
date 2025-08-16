@@ -1,5 +1,5 @@
 const headerTemplate = document.createElement('template');
-headerTemplate.innerHTML = `<nav class="navbar">
+headerTemplate.innerHTML = ` <link rel="stylesheet" href="style.css"><nav class="navbar">
   <div class="logo">MyPortfolio</div>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
@@ -7,7 +7,7 @@ headerTemplate.innerHTML = `<nav class="navbar">
     <li><a href="projects.html">Projects</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-</nav>`;
+</nav>`
 
 // My Custom Header
 class Header extends HTMLElement {
@@ -112,4 +112,3 @@ if (form) {
     }
   });
 }
-
