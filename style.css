@@ -1,0 +1,280 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: black;
+  color: #20B2AA;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: white;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 7px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-item i {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+/* --- Icon Colors --- */
+.fa-java { color: #f89820; }        /* Java orange */
+.fa-code { color: #5c6bc0; }        /* Generic code icon purple/blue */
+.fa-html5 { color: #e34c26; }       /* HTML orange */
+.fa-css3-alt { color: #2965f1; }    /* CSS blue */
+.fa-js { color: #f0db4f; }          /* JavaScript yellow */
+.fa-git-alt { color: #f05033; }     /* Git red */
+.fa-github { color: #333333; }      /* GitHub black */
+.fa-laptop-code { color: #ff6f00; } /* IntelliJ orange */
+.fa-comments { color: #4caf50; }    /* Communication green */
+.fa-people-group { color: #2196f3; }/* Team blue */
+
+.navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+/* Logo text */
+.navbar .logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Nav links list */
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+/* Each nav item */
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+/* Link styles */
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.navbar .nav-links a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+#hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin-left:100px;
+    margin-right:100px;
+    background: linear-gradient(to right, #00adb5, #393e46);
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+#hero:hover{
+    transform: scale(1.05);
+}
+#hero h2 {
+    font-size: 2rem;
+}
+#hero h3 {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* About Section */
+#bio {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out 0.2s;
+}
+#bio:hover{
+  transform:scale(1.05);  
+}
+#bio h3 {
+    margin-bottom: 1rem;
+}
+#bio p {
+    line-height: 2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Projects Section */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:50px;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #222831;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  color: #eeeeee;
+  max-width: 80%; 
+}
+
+.project-card:hover {
+  transform: translateY( 8px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+}
+
+.project-card h2 {
+  font-size: 35px;
+  margin-bottom: 12px;
+  color: #00adb5;
+}
+
+.project-card p {
+  font-size: 20px;
+  line-height: 2;
+  margin-bottom: 15px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background: #00adb5;
+  transition: background 0.3s ease;
+}
+
+.project-links a:hover {
+  background: #007f88;
+}
+
+/* Contact Section */
+#contact {
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 700px;
+  text-align: center;
+  background: #222831;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+#contact h2 {
+  color: #00adb5;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#contact p {
+  margin-bottom: 1rem;
+}
+
+#contact a {
+  color: #00adb5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Info Icons */
+.contact-info i {
+  margin-right: 6px;
+  color: #00adb5;
+}
+
+/* Form Styling */
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form input, form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  background: #00adb5;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #007f88;
+}
+
+/* Scroll progress bar */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0;
+  background: #00adb5;   /* accent color */
+  z-index: 2000;         /* above navbar */
+  transition: width 0.25s ease-out;
+}
+
+#form-status {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
